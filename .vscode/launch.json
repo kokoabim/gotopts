@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/gotopts/bin/Debug/net7.0/gotopts.dll",
+            "args": "${input:args}",
+            "cwd": "${workspaceFolder}/src/gotopts",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "args",
+            "type": "promptString",
+            "description": "Command Line Arguments",
+            "default": ""
+        }
+    ]
+}
